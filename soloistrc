@@ -15,6 +15,7 @@ recipes:
 # development (general)
 - sprout-osx-base::workspace_directory
 - pivotal_workstation::unix_essentials
+- pivotal_workstation::git_config_global_defaults
 - sprout-osx-git::git_scripts
 
 # development (rails)
