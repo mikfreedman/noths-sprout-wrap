@@ -18,7 +18,7 @@ recipes:
 - sprout-osx-git::git_scripts
 
 # development (rails)
-- sprout-osx-rvm
+- pivotal_workstation::rvm
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
 - sprout-osx-apps::imagemagick
