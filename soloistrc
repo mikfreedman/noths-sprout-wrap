@@ -1,56 +1,56 @@
 recipes:
-  # base (required by sprout)
-  - sprout-osx-base::bash_it
-  - pivotal_workstation::create_var_chef_cache
-  - sprout-osx-base::homebrew
+# base (required by sprout)
+- sprout-osx-base::bash_it
+- pivotal_workstation::create_var_chef_cache
+- sprout-osx-base::homebrew
 
-  # noths
-  - noths::default
+# noths
+- noths::custom_bash_it
 
-  # settings
-  - pivotal_workstation::sshd_on
-  - pivotal_workstation::inputrc
-  - sprout-osx-settings::defaults_fast_key_repeat_rate
-  - pivotal_workstation::locate_on
-  - sprout-osx-settings::global_environment_variables
+# settings
+- pivotal_workstation::sshd_on
+- pivotal_workstation::inputrc
+- sprout-osx-settings::defaults_fast_key_repeat_rate
+- pivotal_workstation::locate_on
+- sprout-osx-settings::global_environment_variables
 
-  # development (general)
-  - sprout-osx-base::workspace_directory
-  - pivotal_workstation::unix_essentials
-  - pivotal_workstation::git_config_global_defaults
-  - sprout-osx-git::git_scripts
+# development (general)
+- sprout-osx-base::workspace_directory
+- pivotal_workstation::unix_essentials
+- pivotal_workstation::git_config_global_defaults
+- sprout-osx-git::git_scripts
 
-  # development (rails)
-  - pivotal_workstation::rvm
-  - pivotal_workstation::gem_setup
-  - pivotal_workstation::mysql
-  - sprout-osx-apps::imagemagick
-  - sprout-osx-apps::node_js
-  - sprout-osx-apps::qt
+# development (rails)
+- pivotal_workstation::rvm
+- pivotal_workstation::gem_setup
+- pivotal_workstation::mysql
+- sprout-osx-apps::imagemagick
+- sprout-osx-apps::node_js
+- sprout-osx-apps::qt
 
-  # apps
-  - pivotal_workstation::screen_sharing_app
-  - sprout-osx-apps::shiftit
-  - sprout-osx-apps::menumeters
-  - sprout-osx-apps::ccmenu
-  - pivotal_workstation::github_for_mac
-  - sprout-osx-apps::iterm2
-  - sprout-osx-apps::keycastr
-  - sprout-osx-apps::vagrant
+# apps
+- pivotal_workstation::screen_sharing_app
+- sprout-osx-apps::shiftit
+- sprout-osx-apps::menumeters
+- sprout-osx-apps::ccmenu
+- pivotal_workstation::github_for_mac
+- sprout-osx-apps::iterm2
+- sprout-osx-apps::keycastr
+- sprout-osx-apps::vagrant
 
-  # apps (editors)
-  - sprout-osx-apps::textmate
-  - sprout-osx-apps::textmate_bundles
-  - sprout-osx-apps::textmate_preferences
-  - sprout-osx-apps::sublime_text
+# apps (editors)
+- sprout-osx-apps::textmate
+- sprout-osx-apps::textmate_bundles
+- sprout-osx-apps::textmate_preferences
+- sprout-osx-apps::sublime_text
 
-  - sprout-osx-apps::macvim
-  - sprout-osx-apps::ctags_exuberant
+- sprout-osx-apps::macvim
+- sprout-osx-apps::ctags_exuberant
 
-  - sprout-osx-apps::rubymine
-  - sprout-osx-rubymine::preferences
+- sprout-osx-apps::rubymine
+- sprout-osx-rubymine::preferences
 
-  - sprout-homebrew
+- sprout-homebrew
 
 node_attributes:
   git_pairs_domain: pivotallabs.com
