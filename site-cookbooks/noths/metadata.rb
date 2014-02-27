@@ -1,0 +1,7 @@
+name             'noths'
+maintainer       'noths'
+maintainer_email 'noths@example.com'
+license          'MIT'
+description      'A handful of things for noths development'
+version          '0.0.1'
+supports         'mac_os_x'

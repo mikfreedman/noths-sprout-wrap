@@ -1,0 +1,1 @@
+sprout_osx_base_bash_it_custom_plugin "jump.bash"
