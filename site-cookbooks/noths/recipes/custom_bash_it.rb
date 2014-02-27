@@ -1,1 +1,7 @@
+sprout_osx_base_bash_it_custom_plugin "bash_it/custom/aliases.bash"
+sprout_osx_base_bash_it_custom_plugin "bash_it/custom/assumed.bash"
+sprout_osx_base_bash_it_custom_plugin "bash_it/custom/git.bash"
 sprout_osx_base_bash_it_custom_plugin "bash_it/custom/jump.bash"
+sprout_osx_base_bash_it_custom_plugin "bash_it/custom/noths_helpers.bash"
+sprout_osx_base_bash_it_custom_plugin "bash_it/custom/run_cmd.bash"
+sprout_osx_base_bash_it_custom_plugin "bash_it/custom/timer.bash"

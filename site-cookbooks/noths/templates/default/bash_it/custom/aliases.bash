@@ -1,0 +1,42 @@
+alias ..='cd ..'
+alias assume="git update-index --assume-unchanged"
+alias be='bundle exec'
+alias bi='bundle install -j4' # Needs bundler --pre
+alias cacheclasses='touch config/environments/cache_classes && vssh touch tmp/restart.txt && echo Classes cached.'
+alias clean_git="clean_git_local && clean_git_remote && git gc"
+alias clean_git_local="git branch --merged | grep -v '\*' | xargs -n 1 git branch -d"
+alias clean_git_remote="git remote prune origin"
+alias dev='ssh vagrant@dev.noths.com -t bash'
+alias gdbs='git co -- db/schema.rb'
+alias gm='git co master'
+alias gp='git pull'
+alias gr='git pull --rebase origin master'
+alias gs='git st'
+alias gst='git status'
+alias lc='grunt less:compile'
+alias ll='ls -al'
+alias mall='rake db:migrate && rake db:migrate db:test:prepare'
+alias md='mkdir -p'
+alias mivm='mvim'
+alias noths='cd ~/sites/noths/www/'
+alias panic="git co as/panicbranch && git add . && git commit -m 'PANIC COMMIT' && git push -fu"
+alias plzsphinx='vssh rm log/searchd.development.pid && vssh bundle exec rake thinking_sphinx:start && echo Sorted.'
+alias rebaseintegration='git fetch && git rebase origin/integration'
+alias rebasemaster='git fetch && git rebase origin/master'
+alias reload='source ~/.bash_profile'
+alias rfix='rspec --order=default --fail-fast'
+alias rlc='vssh rake less:compile'
+alias rs='bundle exec rspec'
+alias rs='vssh bundle exec rspec'
+alias rvm-restart='rvm_reload_flag=1 source '\''/Users/pivotal/.rvm/scripts/rvm'\'''
+alias sl='ls'
+alias startsql='/usr/local/mysql/bin/mysqld --datadir=/usr/local/mysql/data'
+alias ttr='zeus_restart && vssh touch tmp/restart.txt && echo done.'
+alias unassume="git update-index --no-assume-unchanged"
+alias uncacheclasses='rm config/environments/cache_classes && vssh touch tmp/restart.txt && echo Classes uncached.'
+alias vh='vagrant halt'
+alias vp='vagrant provision'
+alias vr='vagrant suspend && vagrant halt && vagrant up && zeus_restart'
+alias vst='vagrant status'
+alias vsu='vagrant suspend'
+alias vu='vagrant up'
