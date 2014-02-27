@@ -7,6 +7,7 @@ recipes:
 # noths
 - noths::custom_bash_it
 - noths::gitconfig
+- noths::mysql
 
 # settings
 - pivotal_workstation::sshd_on
@@ -24,7 +25,6 @@ recipes:
 # development (rails)
 - pivotal_workstation::rvm
 - pivotal_workstation::gem_setup
-- pivotal_workstation::mysql
 - sprout-osx-apps::imagemagick
 - sprout-osx-apps::node_js
 - sprout-osx-apps::qt
