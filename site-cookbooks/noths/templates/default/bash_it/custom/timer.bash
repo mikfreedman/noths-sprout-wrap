@@ -8,4 +8,3 @@ function timer_stop {
 }
 
 trap 'timer_start' DEBUG
-PROMPT_COMMAND=timer_stop
