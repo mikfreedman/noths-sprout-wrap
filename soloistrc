@@ -6,6 +6,7 @@ recipes:
 
 # noths
 - noths::custom_bash_it
+- noths::gitconfig
 
 # settings
 - pivotal_workstation::sshd_on
