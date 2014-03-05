@@ -1,7 +1,7 @@
 [user]
-  name = Michael Freedman
-  email = mfreedman@notonthehighstreet.com
-  initials = mik
+  name = 
+  email = 
+  initials = 
 [credential]
   helper = osxkeychain
 [push]
