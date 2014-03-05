@@ -8,6 +8,10 @@ recipes:
 - noths::custom_bash_it
 - noths::gitconfig
 - noths::mysql
+- noths::sequelpro
+- noths::sublime_text
+- noths::notonthehighstreet_repo
+- noths::database_dumps
 
 # settings
 - pivotal_workstation::sshd_on
@@ -45,7 +49,6 @@ recipes:
 - sprout-osx-apps::textmate
 - sprout-osx-apps::textmate_bundles
 - sprout-osx-apps::textmate_preferences
-- sprout-osx-apps::sublime_text
 
 - sprout-osx-apps::macvim
 - sprout-osx-apps::ctags_exuberant
@@ -73,3 +76,5 @@ node_attributes:
         - skype
         - vagrant
         - virtualbox
+        - htop-osx
+
