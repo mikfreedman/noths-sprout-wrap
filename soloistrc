@@ -60,12 +60,11 @@ recipes:
 - sprout-homebrew
 
 node_attributes:
-  git_pairs_domain: pivotallabs.com
-  git_pairs_authors:
   git_projects:
-    -
-      - sprout-wrap
-      - https://github.com/pivotal-sprout/sprout-wrap.git
+    - "git@github.com:notonthehighstreet/notonthehighstreet.git"
+    - "git@github.com:notonthehighstreet/noths-sprout-wrap.git"
+    - "git@github.com:notonthehighstreet/global_db.git"
+    - "git@github.com:notonthehighstreet/deployments.git"
   sprout:
     homebrew:
       casks:
