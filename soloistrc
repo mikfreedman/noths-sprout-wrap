@@ -8,6 +8,8 @@ recipes:
 - noths::custom_bash_it
 - noths::gitconfig
 - noths::mysql
+# brew vs rvm vs system rubies :(
+# - noths::git_shell
 
 # settings
 - pivotal_workstation::sshd_on
