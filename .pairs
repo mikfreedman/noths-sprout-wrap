@@ -1,0 +1,24 @@
+pairs:
+  as: Alex Sunderland; alexsunderland
+  at: Andrew Thurlow; andrewthurlow
+  bp: Billal Patel; billalpatel
+  cm: Chris Mckenzie; chrismckenzie
+  db: Dave Broome; davebroome
+  dr: Douglas Roper; dougdroper
+  es: Ed Saunders; edsaunders
+  jeh: Jesse Heitler; jheitler
+  jh: James Hunt; jameshunt
+  jhgl: Jonathan Lim; jonlim
+  mik: Michael Freedman; mfreedman
+  nc: Neil Chambers; neilchambers
+  pt: Phil Thompson; philthompson
+  rp: Ryan Pace; ryanpace
+  rs: Roland Swingler; rolandswingler
+  tc: Theo Cushion; tcushion
+  tg: Tony Green; tonygreen
+
+email:
+  prefix:
+  domain: notonthehighstreet.com
+
+global: true
