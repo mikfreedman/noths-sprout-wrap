@@ -39,7 +39,6 @@ recipes:
 - pivotal_workstation::github_for_mac
 - sprout-osx-apps::iterm2
 - sprout-osx-apps::keycastr
-- sprout-osx-apps::vagrant
 
 # apps (editors)
 - sprout-osx-apps::textmate
