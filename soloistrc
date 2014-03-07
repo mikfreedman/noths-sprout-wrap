@@ -10,6 +10,10 @@ recipes:
 - noths::mysql
 # brew vs rvm vs system rubies :(
 # - noths::git_shell
+- noths::sequelpro
+- noths::sublime_text
+- noths::notonthehighstreet_repo
+- noths::database_dumps
 
 # settings
 - pivotal_workstation::sshd_on
@@ -39,12 +43,13 @@ recipes:
 - pivotal_workstation::github_for_mac
 - sprout-osx-apps::iterm2
 - sprout-osx-apps::keycastr
+- sprout-osx-apps::hipchat
+- sprout-osx-apps::alfred
 
 # apps (editors)
 - sprout-osx-apps::textmate
 - sprout-osx-apps::textmate_bundles
 - sprout-osx-apps::textmate_preferences
-- sprout-osx-apps::sublime_text
 
 - sprout-osx-apps::macvim
 - sprout-osx-apps::ctags_exuberant
@@ -72,3 +77,5 @@ node_attributes:
         - skype
         - vagrant
         - virtualbox
+        - htop-osx
+
