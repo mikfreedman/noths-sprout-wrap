@@ -6,5 +6,6 @@ node['git_projects'].each do |address|
     revision    "master"
     action      :checkout
     user        node["current_user"]
+    timeout     60 * 60 * 2
   end
 end
