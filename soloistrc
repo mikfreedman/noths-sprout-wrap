@@ -44,7 +44,6 @@ recipes:
 - sprout-osx-apps::iterm2
 - sprout-osx-apps::keycastr
 - sprout-osx-apps::hipchat
-- sprout-osx-apps::alfred
 
 # apps (editors)
 - sprout-osx-apps::textmate
@@ -68,6 +67,7 @@ node_attributes:
   sprout:
     homebrew:
       casks:
+        - alfred
         - bettertouchtool
         - dropbox
         - firefox
