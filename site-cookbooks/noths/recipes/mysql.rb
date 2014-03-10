@@ -60,6 +60,5 @@ ruby_block "Checking that mysql is running" do
 end
 
 execute "Reset password if required" do
-  command "mysqladmin -u root -ppassword password ''"
-  only_if { "mysql -u root -ppassword -e exit;"}
+  command "mysql -u root -ppassword -e 'exit;' && mysqladmin -u root -ppassword password ''; true"
 end
