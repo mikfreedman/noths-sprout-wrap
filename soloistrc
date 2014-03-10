@@ -76,5 +76,19 @@ node_attributes:
         - skype
         - vagrant
         - virtualbox
-        - htop-osx
 
+  sublime_text_packages:
+    - name: "filename_to_clipboard"
+      source: "https://github.com/dougdroper/filename_to_clipboard"
+    - name: "Cucumber Step Finder"
+      source: "git@github.com:danielfrey/sublime-cucumber-step-finder.git"
+    - name: "Git"
+      source: "git@github.com:kemayo/sublime-text-git.git"
+    - name: "GitGutter"
+      source: "git@github.com:jisaacks/GitGutter.git"
+    - name: "Gherkin Highlight"
+      source: "git@github.com:hypernovagama/Gherkin-highlight-sublimetext.git"
+    - name: "SublimeLinter"
+      source: "git@github.com:SublimeLinter/SublimeLinter3.git"
+    - name: "CTags"
+      source: "git@github.com:SublimeText/CTags.git"
