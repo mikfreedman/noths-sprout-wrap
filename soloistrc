@@ -44,6 +44,7 @@ recipes:
 - sprout-osx-apps::iterm2
 - sprout-osx-apps::keycastr
 - sprout-osx-apps::hipchat
+- sprout-osx-apps::truecrypt
 
 # apps (editors)
 - sprout-osx-apps::textmate
