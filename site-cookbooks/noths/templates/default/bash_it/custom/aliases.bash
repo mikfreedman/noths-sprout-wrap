@@ -8,6 +8,7 @@ alias clean_git_local="git branch --merged | grep -v '\*' | xargs -n 1 git branc
 alias clean_git_remote="git remote prune origin"
 alias dev='ssh vagrant@dev.noths.com -t bash'
 alias gdbs='git co -- db/schema.rb'
+alias gitx='open -a GitX .'
 alias gm='git co master'
 alias gp='git pull'
 alias gr='git pull --rebase origin master'
