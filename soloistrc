@@ -68,6 +68,8 @@ node_attributes:
     - "git@github.com:notonthehighstreet/deployments.git"
   sprout:
     homebrew:
+      formulae:
+        - aspell
       casks:
         - alfred
         - bettertouchtool
