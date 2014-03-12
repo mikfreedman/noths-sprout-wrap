@@ -12,8 +12,9 @@ recipes:
 # - noths::git_shell
 - noths::sequelpro
 - noths::sublime_text
-- noths::notonthehighstreet_repo
 - noths::database_dumps
+- noths::notonthehighstreet_dev
+- noths::notonthehighstreet_repo
 
 # settings
 - pivotal_workstation::sshd_on
@@ -62,7 +63,6 @@ recipes:
 
 node_attributes:
   git_projects:
-    - "git@github.com:notonthehighstreet/notonthehighstreet.git"
     - "git@github.com:notonthehighstreet/noths-sprout-wrap.git"
     - "git@github.com:notonthehighstreet/global_db.git"
     - "git@github.com:notonthehighstreet/deployments.git"
