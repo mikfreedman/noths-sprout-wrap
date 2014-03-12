@@ -123,6 +123,7 @@ PATH
     noths (0.0.1)
 
 DEPENDENCIES
+  dmg (>= 0)
   meta (>= 0)
   noths (>= 0)
   osx (>= 0)

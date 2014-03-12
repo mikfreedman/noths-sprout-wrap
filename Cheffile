@@ -1,10 +1,13 @@
 site 'http://community.opscode.com/api/v1'
 
+
 cookbook 'meta',
   :path => 'site-cookbooks/meta'
 
 cookbook 'noths',
   :path => 'site-cookbooks/noths'
+
+cookbook 'dmg'
 
 cookbook 'sprout-osx-rbenv',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
@@ -44,3 +47,4 @@ cookbook 'sprout-osx-rubymine',
 
 cookbook 'sprout-homebrew',
   :git => 'git://github.com/pivotal-sprout/sprout-homebrew.git'
+
