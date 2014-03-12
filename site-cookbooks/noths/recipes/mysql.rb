@@ -22,15 +22,19 @@ PARENT_DATA_DIR = "/usr/local/var"
   end
 end
 
-package "mysql"
+launchagent_path = "#{node['sprout']['home']}/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
 
-ruby_block "copy mysql plist to ~/Library/LaunchAgents" do
-  block do
-    active_mysql = Pathname.new("/usr/local/bin/mysql").realpath
-    plist_location = (active_mysql + "../../"+"homebrew.mxcl.mysql.plist").to_s
-    destination = "#{node['sprout']['home']}/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
-    system("cp #{plist_location} #{destination} && chown #{node['current_user']} #{destination}") || raise("Couldn't find the plist")
-  end
+execute "load the mysql into launchctl" do
+  command "launchctl unload #{launchagent_path} && launchctl load -w #{launchagent_path}"
+  user    node['current_user']
+  action  :nothing
+end
+
+template "add mysql LaunchAgent" do
+  path     launchagent_path
+  source   "mysql/homebrew.mxcl.mysql.plist"
+  owner    node['current_user']
+  notifies :run, "execute[load the mysql into launchctl]"
 end
 
 ruby_block "mysql_install_db" do
@@ -41,12 +45,6 @@ ruby_block "mysql_install_db" do
     system("mysql_install_db --verbose --user=#{node['current_user']} --basedir=#{basedir} --datadir=#{DATA_DIR} --tmpdir=/tmp && chown #{node['current_user']} #{data_dir}") || raise("Failed initializing mysqldb")
   end
   not_if { File.exists?("/usr/local/var/mysql/mysql/user.MYD")}
-end
-
-execute "load the mysql plist into the mac daemon startup thing" do
-  command "launchctl load -w #{node['sprout']['home']}/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
-  user node['current_user']
-  not_if { system("launchctl list com.mysql.mysqld") }
 end
 
 ruby_block "Checking that mysql is running" do
@@ -61,4 +59,8 @@ end
 
 execute "Reset password if required" do
   command "mysql -u root -ppassword -e 'exit;' && mysqladmin -u root -ppassword password ''; true"
+end
+
+execute "Allow root access from all hosts" do
+  command "mysql -u root -e \"GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';\""
 end
