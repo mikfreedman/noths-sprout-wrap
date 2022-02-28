@@ -2,26 +2,32 @@ GEM
   remote: https://rubygems.org/
   specs:
     erubis (2.7.0)
-    foodcritic (3.0.3)
+    ffi-yajl (2.4.0)
+      libyajl2 (>= 1.2)
+    foodcritic (16.3.0)
       erubis
-      gherkin (~> 2.11.7)
-      nokogiri (~> 1.5.4)
+      ffi-yajl (~> 2.0)
+      nokogiri (>= 1.5, < 2.0)
       rake
-      treetop (~> 1.4.10)
-      yajl-ruby (~> 1.1.0)
-    gherkin (2.11.8)
-      multi_json (~> 1.3)
-    multi_json (1.8.2)
-    nokogiri (1.5.11)
-    polyglot (0.3.3)
-    rake (10.1.1)
-    treetop (1.4.15)
-      polyglot
-      polyglot (>= 0.3.1)
-    yajl-ruby (1.1.0)
+      rufus-lru (~> 1.0)
+      treetop (~> 1.4)
+    libyajl2 (2.1.0)
+    mini_portile2 (2.8.0)
+    nokogiri (1.13.3)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    polyglot (0.3.5)
+    racc (1.6.0)
+    rake (13.0.6)
+    rufus-lru (1.1.0)
+    treetop (1.6.11)
+      polyglot (~> 0.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  foodcritic
+  foodcritic (>= 4.0.0)
+
+BUNDLED WITH
+   2.1.4
